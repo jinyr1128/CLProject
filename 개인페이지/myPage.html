@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300&family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <style>
+        #photo img {
+            border-radius: 70%;
+            width: 300px;
+            height: 300px;
+            border: thick dotted orange
+        }
+        #container{
+            margin-top: 2rem;
+            padding: 4rem;
+            display: flex;
+            align-items: center;
+        }
+        #photo {
+            margin : 2rem;  
+            border-radius: 5%;
+            background-color: beige; 
+            padding: 1rem;
+        }
+        #title{
+            display: flex;
+            flex-direction: column;
+            font-size: 1.5rem;
+            background-position: center;
+            background-size: cover;
+            /* justify-content: center; */
+            /* align-items: center; */
+            height: 250px;
+            background-image: url(https://blog.kakaocdn.net/dn/u9rVh/btqF1Tl1JYP/o6RFjwQS77Jkj6snO0nSjk/img.png);
+        }
+        #content{
+            margin : 3rem;
+        }
+        #content > div {
+            margin : 10px;
+        }
+        #nav{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+            margin-right: 15px;
+        }
+        #footer{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        #footer img{
+            width: 50px;
+            height: 50px;
+            margin-right: 1rem;
+        }
+        #title div h1 {
+            display: flex;
+            justify-content: center;
+            color: orange;
+            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        }
+        #title div a {
+            font-size: medium;
+        }
+        #images{
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+        #images span img {
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+        }
+        #images span img:hover {
+        	/* -webkit-transform: scale(1.3); */
+	        transform: scale(1.3);
+        }
+        #line {
+            content: "◆ my favorite things";
+        }
+        .line{
+            display:flex;
+            flex-basis: 100%;
+            align-items: center;
+            color: rgba(0,0,0,0.35);
+            font-size: 1.3rem;
+            margin: 8px 0px;
+        }
+        .line::before{
+            content: "---------------------";
+            flex-grow: 1;
+            margin: 0px 16px;
+            background: rgba(0,0,0,0.35);
+            height: 1px;
+            font-size: 0px;
+            line-height: 0px;
+        }
+        .line::after{
+            content: "---------------------";
+            flex-grow: 1;
+            margin: 0px 16px;
+            background: rgba(0,0,0,0.35);
+            height: 1px;
+            font-size: 0px;
+            line-height: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id='title'>
+        <div id="nav"><a href="#">Home</a></div>
+        <div><h1>ABOUT ME</h1></div>
+    </div>
+    <span id="container">
+        <span id="photo">
+            <img src="https://blog.kakaocdn.net/dn/bftRiB/btqAjaghSBk/5CcN9W5qyCU8HLylVYcXb1/img.png"/>
+        </span>
+        <span id="content">
+            <div>이름 : 홍길동</div>
+            <div>장점 : </div>
+            <div>취미 : </div>
+            <div>성격  : </div>
+            <div>MBTI :</div>
+            <div>협업 스타일 : </div>
+            <div>깃헙 주소 : </div>
+        </span>
+    </span>
+    
+    <div class="line">My Favorite Things</div>
+
+    <div id="images">
+        <span id="">
+            <img src="https://img.freepik.com/free-vector/hand-drawn-korean-street-food-element-collection_23-2149650969.jpg"/>
+        </span>
+        <span id="">
+            <img src="https://img.freepik.com/premium-vector/illustration-of-cute-food_553316-31.jpg?w=2000"/>
+        </span>
+        <span id="">
+            <img src="https://img.freepik.com/free-vector/hand-drawn-cute-fast-food-collection_23-2148109173.jpg?w=2000"/>
+        </span>
+    </div>
+
+    <hr style="border:1px color= silver;" width="90%">
+    <div id="footer">
+        <a href="https://www.tistory.com/"><img src="scr/icons/tistory.png" width="10%"/></a>
+        <a href="https://www.github.com/"><img src="scr/icons/free-icon-github-1051326.png" width="10%"/></a>
+    </div>
+</body>
+</html>
