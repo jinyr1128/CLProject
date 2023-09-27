@@ -8,25 +8,25 @@ const members = [
     {
         image: "scr/img/ex1.jpg",
         website: "https://www.jowon2.com",
-        bigText: "조원1",
+        bigText: "윤인석",
         smallText: "조원 개인소개 멘트 기깔나게 왕다다다다다다"
     },
     {
         image: "scr/img/ex1.jpg",
         website: "https://www.jowon2.com",
-        bigText: "조원2",
+        bigText: "진유록",
         smallText: "조원 개인소개 멘트 기깔나게 왕다다다다다다"
     },
     {
         image: "scr/img/ex1.jpg",
         website: "https://www.jowon2.com",
-        bigText: "조원3",
+        bigText: "권준혁",
         smallText: "조원 개인소개 멘트 기깔나게 왕다다다다다다"
     },
     {
         image: "scr/img/ex1.jpg",
         website: "https://www.jowon2.com",
-        bigText: "조원4",
+        bigText: "장지원",
         smallText: "조원 개인소개 멘트 기깔나게 왕다다다다다다"
     }
 ];
