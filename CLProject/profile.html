@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유록이네</title>
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="icon" href="./icons/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300&family=Gowun+Dodum&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navigator">
+            
+            <h1 class="web-title">
+                <a href="index.html" class="web-icon"></a>
+                <a href="index.html"> <span class="web-name">민들레</span></a>
+            </h1>
+
+            <ul class="nav-group">
+                <li class="nav-list"><a class="nav-btn" href="javascript:void(0)">Team:HTML5</a></li>
+                <li class="nav-list"><a class="nav-btn" href="javascript:void(0)">윤인석</a></li>
+                <li class="nav-list"><a class="nav-btn" href="javascript:void(0)">진유록</a></li>
+                <li class="nav-list"><a class="nav-btn" href="javascript:void(0)">권준혁</a></li>
+                <li class="nav-list"><a class="nav-btn" href="javascript:void(0)">장지원</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="title-section">
+            <div>
+                <h1>"Together"</h1>
+                <p>It makes everything possible</p>
+            </div>
+
+        </section>
+
+        <section class="profile-section">
+            <figure>
+                <img src="./images/profile.JPG" alt="me">
+            </figure>
+
+            <div class="profile-section-line"></div>
+
+
+            <section class="info-content">
+                <div class="content-each"> <span class="content-subtitle">이름 :&nbsp;</span><span id="name">진유록</span>
+                </div>
+                <div class="content-each"> <span class="content-subtitle">장점 :&nbsp;</span>
+                    <p id="advantage">1.근본적인 원인파악에 능합니다. <br>2.계획된 일은 무조건 계획에 맞추어 냅니다. <br>3.감정이든 상황이든 인내심이 강합니다. </p>
+                </div>
+                <div class="content-each"> <span class="content-subtitle">성격 :&nbsp;</span><span
+                        id="personality">차분함</span></div>
+                <div class="content-each"> <span class="content-subtitle">협업 스타일 :&nbsp;</span><span id="type">조력자 및 중재자
+                        타입</span></div>
+                <div class="content-each"><img src="/icons/git.png" alt="GitHub" class="icon">Github : <a
+                        href="https://github.com/jinyr1128" target="_blank">https://github.com/jinyr1128</a>
+                </div>
+                <div class="content-each"><img src="/icons/velog.png" alt="vleog" class="icon">vleog :&nbsp;<a
+                        href="https://velog.io/@jinyr1128" target="_blank">https://velog.io/@jinyr1128</a></div>
+                <div class="content-each"><img src="/icons/insta.svg" alt="instagram" class="icon">instagram : <a
+                        href="https://instagram.com/yulgiii_1128_?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">Yurok</a>
+                </div>
+                <div id="icons" class="content-each">
+                    <h4><span class="content-subtitle">취미 :&nbsp;</span> </h4>
+                    <div id="hobby">
+                        <img src="/icons/hobby.png" />
+                        <img src="/icons/listening.png" />
+                        <img src="/icons/movie.png" />
+                        <img src="/icons/psgame.png" />
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="profile-section-line"></div>
+
+            <div class="mbti-container" class="content-each">
+                <div id="mbti-text"><span>MBTI</span></div>
+                <img src="../images/MBTI.png" id="mbti-image" />
+            </div>
+
+        </section>
+
+        <div class="image-container">
+            <div class="page-middle-line"><span>My Favorite Things</span></div>
+
+            <div class="images">
+                
+            </div>
+        </div>
+
+    </main>
+
+    <hr class="page-bottom-line">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"
+        integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/main.js"></script>
+
+    <script type="my-template" id="contentTemplate">
+            <figure>
+                <img src="{{imageUrl}}" alt="me">
+            </figure>
+
+            <div class="profile-section-line"></div>
+
+
+            <section class="info-content">
+                <div class="content-each"> <span class="content-subtitle">이름 :&nbsp;</span><span id="name">{{name}}</span>
+                </div>
+                <div class="content-each"> <span class="content-subtitle">장점 :&nbsp;</span>
+                    <p id="advantage">{{advantage}}</p>
+                </div>
+                <div class="content-each"> <span class="content-subtitle">성격 :&nbsp;</span><span
+                        id="personality">{{personality}}</span></div>
+                <div class="content-each"> <span class="content-subtitle">협업 스타일 :&nbsp;</span><span id="type">{{type}}</span></div>
+                
+                <div class="content-each"><img src="{{blogLogoImageUrl}}" alt="GitHub" class="icon">Github : <a
+                        href="https://github.com/jinyr1128" target="_blank">https://github.com/jinyr1128</a>
+                </div>
+                
+                <div id="icons" class="content-each">
+                    <h4><span class="content-subtitle">취미 :&nbsp;</span> </h4>
+                    <div id="hobby">
+                        {{#each hobbyImageUrl}}
+                        <img src="{{this}}" />
+                        {{/each}}
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="profile-section-line"></div>
+
+            <div class="mbti-container" class="content-each">
+                <div id="mbti-text"><span>MBTI</span></div>
+                <img src="{{mbtiImageUrl}}" id="mbti-image" />
+            </div>
+    </script>
+    <script type="my-template" id="favorite">
+        {{#each favoriteImageUrl}}
+        <div>
+            <img src="{{this}}"/>
+        </div>
+        {{/each}}
+    </script>
+
+</body>
+
+</html>

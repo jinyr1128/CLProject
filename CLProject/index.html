@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dandelion</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
-    <link rel="icon" href="scr/icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <script src="./js/scripts.js" defer></script>
+    <link rel="icon" href="./icons/favicon.png" type="image/x-icon">
 
 </head>
 
 <body>
     <div class="frame">
         <nav class="navigator">
-            <img src="scr/icons/logo.png" alt="Website Icon" class="web-icon">
-            <h3 class="web-name"><a href="index.html">민들레</a></h3>
-            <ul>
-                <li><a class="nav-menu" href="https://www.team-page.com">Team:민들레</a></li>
-                <li><a class="nav-menu" href="https://www.jowon1.com">윤인석</a></li>
-                <li><a class="nav-menu" href="개인페이지/Yurok.html">진유록</a></li>
-                <li><a class="nav-menu" href="https://www.jowon3.com">권준혁</a></li>
-                <li><a class="nav-menu" href="https://www.jowon4.com">장지원</a></li>
+            
+            <h1 class="web-title">
+                <a href="index.html" class="web-icon"></a>
+                <a href="index.html"> <span class="web-name">민들레</span></a>
+            </h1>
+
+            <ul class="nav-group">
+                <li class="nav-list"><a class="nav-btn" href="javascript:void(0)">Team:HTML5</a></li>
+                <li class="nav-list"><a class="nav-btn" href="javascript:void(0)">윤인석</a></li>
+                <li class="nav-list"><a class="nav-btn" href="javascript:void(0)">진유록</a></li>
+                <li class="nav-list"><a class="nav-btn" href="javascript:void(0)">권준혁</a></li>
+                <li class="nav-list"><a class="nav-btn" href="javascript:void(0)">장지원</a></li>
             </ul>
         </nav>
 
         <div class="image-section">
-            <button onclick="prevImage()"><img src="scr/icons/left-arrow.png" alt="Previous"></button>
+            <button onclick="prevImage()"><img src="./icons/left-arrow.png" alt="Previous"></button>
             <div class="image-content">
                 <a href="#" id="image-link">
-                    <img src="https://placekitten.com/200/300" alt="Member's image" id="member-image">
+                    <img src="./images/ex1.jpg" alt="Member's image" id="member-image">
                     <div class="image-description" id="image-description">팀 페이지 이미지</div>
                     <div class="big-text">이름이나제목</div>
                     <div class="small-text">간단한 자기 소개</div>
                 </a>
             </div>
-            <button onclick="nextImage()"><img src="scr/icons/right-arrow.png" alt="Next"></button>
+            <button onclick="nextImage()"><img src="./icons/right-arrow.png" alt="Next"></button>
         </div>
     </div>
 </body>
