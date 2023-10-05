@@ -1,30 +1,30 @@
 const members = [
     {
-        image: "./images/ex1.jpg",
+        image: "./images/mainpage.jpg",
         website: "https://www.jowon2.com",
-        bigText: "Team:HTML5",
+        bigText: "Dandelion",
         smallText: "팀소개내용을 블랄라라라ㅏ라라라라라라라라라라라라"
     },
     {
         image: "./images/ex1.jpg",
         website: "https://www.jowon2.com",
         bigText: "윤인석",
-        smallText: "조원 개인소개 멘트 기깔나게 왕다다다다다다"
+        smallText: "No pain, No gain"
     },
     {
-        image: "./images/ex1.jpg",
+        image: "./images/MainPage_2.jpeg",
         website: "https://www.jowon2.com",
         bigText: "진유록",
-        smallText: "조원 개인소개 멘트 기깔나게 왕다다다다다다"
+        smallText: "Together: It makes everything possible"
     },
     {
-        image: "./images/ex1.jpg",
+        image: "./images/MainPage_3.jpeg",
         website: "https://www.jowon2.com",
         bigText: "권준혁",
-        smallText: "조원 개인소개 멘트 기깔나게 왕다다다다다다"
+        smallText: "나무보단 숲을 보자"
     },
     {
-        image: "./images/ex1.jpg",
+        image: "./images/MainPage_4.jpg",
         website: "https://www.jowon2.com",
         bigText: "장지원",
         smallText: "조원 개인소개 멘트 기깔나게 왕다다다다다다"
