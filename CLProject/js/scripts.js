@@ -7,19 +7,19 @@ const members = [
     },
     {
         image: "./images/MainPage_1.jpg",
-        website: "https://www.jowon2.com",
+        website: "profile.html?id=1",
         bigText: "윤인석",
         smallText: "No pain, No gain"
     },
     {
         image: "./images/MainPage_2.jpeg",
-        website: "https://www.jowon2.com",
+        website: "profile.html?id=2",
         bigText: "진유록",
         smallText: "Together: It makes everything possible"
     },
     {
         image: "./images/MainPage_3.jpeg",
-        website: "https://www.jowon2.com",
+        website: "profile.html?id=3",
         bigText: "권준혁",
         smallText: "Just Do It"
     },
