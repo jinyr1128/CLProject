@@ -39,8 +39,9 @@ MakeTemplate.prototype.templateSection = function(data, template, target) {
     let bindTemplate = Handlebars.compile(template.innerText);
     let resultHtml = bindTemplate(userData);
     target.innerHTML = resultHtml;
+    console.log(userData);
     let bci = document.querySelector(".title-section");
-    // bci.style.backgroundImage = `url(${data['titleImageUrl']})`;
+    bci.style.backgroundImage = `url(./images/${userData['bannerImg']})`;
     
   
 }
@@ -50,7 +51,7 @@ function parseUrl() {
   const url = new URL(window.location.href);
   const urlParams = url.searchParams;
   let id = Number(urlParams.get('id'));
-  return 1;
+  return id;
 }
 
 async function DataLoader(id) {

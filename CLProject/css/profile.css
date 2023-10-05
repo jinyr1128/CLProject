@@ -86,7 +86,7 @@ header .navigator .web-icon {
 .title-section {
     display: flex;
     text-align: center;
-    background-image: url("../images/title.jpg");
+    background-image: url("");
     position: relative;
     background-size:100% 100%;
     background-repeat: no-repeat;

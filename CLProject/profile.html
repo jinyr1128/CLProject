@@ -24,7 +24,7 @@
             </h1>
 
             <ul class="nav-group">
-                <li class="nav-list"><a class="nav-btn" href="javascript:void(0)">Dandelion</a></li>
+                <li class="nav-list"><a class="nav-btn" href="teamPage.html">Dandelion</a></li>
                 <li class="nav-list"><a class="nav-btn" href="profile.html?id=1">윤인석</a></li>
                 <li class="nav-list"><a class="nav-btn" href="profile.html?id=2">진유록</a></li>
                 <li class="nav-list"><a class="nav-btn" href="profile.html?id=3">권준혁</a></li>
@@ -44,15 +44,15 @@
     <script type="my-template" id="contentTemplate">
         <section class="title-section">
             <div>
-                <h1>"Together"</h1>
-                <p>It makes everything possible</p>
+                <h1>"{{title}}"</h1>
+                <p>{{titleText}}</p>
             </div>
 
         </section>
 
         <section class="profile-section">
             <figure>
-                <img src="{{imageUrl}}" alt="me">
+                <img src="./images/{{profileImg}}" alt="me">
             </figure>
 
             <div class="profile-section-line"></div>
@@ -66,17 +66,18 @@
                 </div>
                 <div class="content-each"> <span class="content-subtitle">성격 :&nbsp;</span><span
                         id="personality">{{personality}}</span></div>
-                <div class="content-each"> <span class="content-subtitle">협업 스타일 :&nbsp;</span><span id="type">{{type}}</span></div>
-                
-                <div class="content-each"><img src="{{blogLogoImageUrl}}" alt="GitHub" class="icon">Github : <a
-                        href="https://github.com/jinyr1128" target="_blank">https://github.com/jinyr1128</a>
+                <div class="content-each"> <span class="content-subtitle">협업 스타일 :&nbsp;</span><span id="type">{{coStyle}}</span></div>
+                {{#each blogUrl}}
+                <div class="content-each"><img src="./icons/{{this.blogLogoImg}}" alt="GitHub" class="icon"><a
+                        href="{{this.url}}" target="_blank">{{this.url}}</a>
                 </div>
+                {{/each}}
                 
                 <div id="icons" class="content-each">
                     <h4><span class="content-subtitle">취미 :&nbsp;</span> </h4>
                     <div id="hobby">
-                        {{#each hobbyImageUrl}}
-                        <img src="{{this}}" />
+                        {{#each hobbyImg}}
+                            <img src="./icons/{{this}}" />
                         {{/each}}
                     </div>
 
@@ -87,7 +88,7 @@
 
             <div class="mbti-container" class="content-each">
                 <div id="mbti-text"><span>MBTI</span></div>
-                <img src="{{mbtiImageUrl}}" id="mbti-image" />
+                <img src="./images/{{mbtiImg}}" id="mbti-image" />
             </div>
         </section>
 
@@ -95,22 +96,15 @@
             <div class="page-middle-line"><span>My Favorite Things</span></div>
 
             <div class="images">
-                {{#each favoriteImageUrl}}
+                {{#each favoriteImg}}
                 <div>
-                    <img src="{{this}}"/>
+                    <img src="./images/{{this}}"/>
                 </div>
                 {{/each}}
             </div>
         </div>
         
 
-    </script>
-    <script type="my-template" id="favorite">
-        {{#each favoriteImageUrl}}
-        <div>
-            <img src="{{this}}"/>
-        </div>
-        {{/each}}
     </script>
 
 </body>
