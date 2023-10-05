@@ -1,6 +1,6 @@
 /* reset css */
 body {
-    background-color: white;
+    background-color: #F5EEF8;
 }
 a {
     text-decoration: none;
@@ -46,7 +46,7 @@ header .navigator ul.nav-group li.nav-list a.nav-btn:hover {
 header .navigator .web-name {
     /* margin: 0; */
     font-size: 35px;
-    color: #F27D0C;
+    color: #FFCA58;
 }
 header .navigator h1.web-title {
     margin-left: 8px;
@@ -63,8 +63,8 @@ header .navigator .web-icon {
     background-image: url('../icons/favicon.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width : 35px;
-    height: 35px;
+    width : 50px;
+    height: 50px;
     
 }
 

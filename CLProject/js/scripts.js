@@ -3,10 +3,10 @@ const members = [
         image: "./images/mainpage.jpg",
         website: "https://www.jowon2.com",
         bigText: "Dandelion",
-        smallText: "팀소개내용을 블랄라라라ㅏ라라라라라라라라라라라라"
+        smallText: "빠르게 퍼져나가는 긍정의 씨앗"
     },
     {
-        image: "./images/ex1.jpg",
+        image: "./images/MainPage_1.jpg",
         website: "https://www.jowon2.com",
         bigText: "윤인석",
         smallText: "No pain, No gain"
@@ -21,13 +21,13 @@ const members = [
         image: "./images/MainPage_3.jpeg",
         website: "https://www.jowon2.com",
         bigText: "권준혁",
-        smallText: "나무보단 숲을 보자"
+        smallText: "Just Do It"
     },
     {
         image: "./images/MainPage_4.jpg",
         website: "https://www.jowon2.com",
         bigText: "장지원",
-        smallText: "조원 개인소개 멘트 기깔나게 왕다다다다다다"
+        smallText: "인간은 스스로의 선택에 의해 자신의 모습을 만들어간다"
     }
 ];
 
@@ -59,8 +59,7 @@ function updateImage() {
     
     document.getElementById("member-image").src = member.image;
     document.getElementById("image-link").href = member.website;
-    document.getElementById("image-description").textContent = member.name;
-
     document.querySelector(".big-text").textContent = member.bigText;
     document.querySelector(".small-text").textContent = member.smallText;
 }
+
