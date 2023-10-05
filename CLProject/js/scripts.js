@@ -1,7 +1,7 @@
 const members = [
     {
         image: "./images/mainpage.jpg",
-        website: "https://www.jowon2.com",
+        website: "teampage.html",
         bigText: "Dandelion",
         smallText: "빠르게 퍼져나가는 긍정의 씨앗"
     },

@@ -7,7 +7,7 @@
 @font-face {
     font-family: stylish;
     src: url(../font/Stylish/Stylish-Regular.ttf) format('truetype');
-    unicode-range: U+0041-005A;
+    unicode-range: U+0041-005A,U+0061-007A;
 }
 body {
     background-color: #F5EEF8;
@@ -17,7 +17,6 @@ body {
 a {
     text-decoration: none;
 }
-
 .navigator {
     display: flex;
     align-items: center;
@@ -26,6 +25,7 @@ a {
 }
 
 .navigator li.nav-list {
+
     display: inline;
     font-size: 20px;
     font-weight: 700;
@@ -35,26 +35,27 @@ a {
     display: inline-block;
     color: black;
     height: 60px;
-    width: 160px;
+    width: 150px;
     text-align: center;
     line-height: 60px;
     border-radius: 6px;
     transition: 0.3s;
     cursor: pointer;
+
 }
 
 .navigator ul.nav-group li.nav-list a.nav-btn:hover {
     background-color: #ddd;
 }
 
+
 .navigator .web-name {
+    /* margin: 0; */
     font-size: 35px;
     color: #FFCA58;
 }
-
 .navigator h1.web-title {
-    margin-left: 8px;
-    margin-right: 25px;
+    margin-left: 20px;
 }
 
 .navigator .web-name a,
@@ -62,16 +63,17 @@ a {
     color: inherit;
 }
 
+
 .navigator .web-icon {
-    display: inline-block;
+    display : inline-block;
     background-image: url('../icons/favicon.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 40px;
+    width : 40px;
     height: 40px;
+    
 }
-
-button {
+button{
     background-color: transparent;
     cursor: pointer;
     border: none;
@@ -90,36 +92,34 @@ button {
     align-items: center;
 }
 
+
 .web-name {
     margin: 0;
     font-size: 35px;
     margin-left: 8px;
     color: #F27D0C;
 }
-
 .web-name a {
     text-decoration: none;
-    color: inherit;
+    color: inherit; 
 }
-
 .web-name a:visited {
     text-decoration: none;
     color: inherit;
 }
-
 .nav-menu {
     text-decoration: none;
     color: black;
 }
-
 .web-icon {
-    display: inline-block;
+    display : inline-block;
     background-image: url('../icons/favicon.png');
     background-size: 200% 200%;
     background-repeat: no-repeat;
-    width: 35px;
+    width : 35px;
     height: 35px;
 }
+
 
 .image-section {
     margin-top: 20px;
@@ -133,8 +133,7 @@ button {
     max-width: 100%;
     max-height: 70vh;
 }
-
-.image-content img {
+.image-content img{
     width: 130vh;
     height: 80vh;
     object-fit: cover;
@@ -150,13 +149,12 @@ button {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
 }
-
 .big-text {
     position: absolute;
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
-    font-size: 50px;
+    font-size: 50px; 
     background-color: transparent;
     color: white;
     padding: 10px;
@@ -172,7 +170,7 @@ button {
     padding: 5px;
 }
 
-button img {
+button img{
     width: 40px;
     height: 40px;
 }

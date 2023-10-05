@@ -1,17 +1,15 @@
-# __😤Sparta_mini_project_Spring_5조__
+# __😤Sparta_mini_project_Spring_3조__
 내일배움캠프, 팀원 소개페이지
 ## 프로젝트 개요
 팀과 팀원들에 대해 소개하는 페이지.<br>
 첫 번째 예비 프로젝트.  
 <br>
-main브랜치 바로가기 https://github.com/jh10253267/sparta_mini_project <br>
-dev브랜치 바로가기 https://github.com/jh10253267/sparta_mini_project/tree/dev <br>
+main브랜치 바로가기 https://github.com/jinyr1128/CLProject.git <br>
 
 ## 👥 멤버
-+ 윤인석님 : 프로필페이지 작성.
-+ 장지원님 : 프로필페이지 작성, 데이터베이스와 연동
-+ 진유록님 : 메인페이지 작성,프로필 페이지 작성
-+ 권준혁 : 문서화작업.
++ 윤인석님 : 메인페이지 CSS,프로필페이지 작성.
++ 진유록님 : 메인페이지 작성,프로필 페이지 작성.
++ 권준혁님 : 데이터베이스,문서화작업.
 ## ⚙개발환경
 + IDE : vscode
 + Database : Firebase
