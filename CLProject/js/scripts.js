@@ -29,12 +29,10 @@ let currentImageIndex = 0;
 
 function updateImage() {
     const member = members[currentImageIndex];
-    const imgElement = document.getElementById("member-image");
-    const linkElement = document.getElementById("image-link");
-    const descriptionElement = document.getElementById("image-description");
-    imgElement.src = member.image;
-    linkElement.href = member.website;
-    descriptionElement.textContent = member.name;
+    document.getElementById("member-image").src = member.image;
+    document.getElementById("image-link").href = member.website;
+    document.querySelector(".big-text").textContent = member.bigText;
+    document.querySelector(".small-text").textContent = member.smallText;
 }
 
 function nextImage() {
@@ -47,13 +45,19 @@ function prevImage() {
     updateImage();
 }
 
-document.addEventListener("DOMContentLoaded", updateImage);
-function updateImage() {
-    const member = members[currentImageIndex];
-    
-    document.getElementById("member-image").src = member.image;
-    document.getElementById("image-link").href = member.website;
-    document.querySelector(".big-text").textContent = member.bigText;
-    document.querySelector(".small-text").textContent = member.smallText;
+function detectLanguage() {
+    const allNodes = document.querySelectorAll('body *');
+    allNodes.forEach(node => {
+        const text = node.textContent;
+        if (/[a-zA-Z]/.test(text)) {
+            node.classList.add('english-text');
+        } else if (/[가-힣]/.test(text)) {
+            node.classList.add('korean-text');
+        }
+    });
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    updateImage();
+    detectLanguage();
+});
