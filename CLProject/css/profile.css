@@ -49,7 +49,8 @@ header .navigator .web-name {
     color: #FFCA58;
 }
 header .navigator h1.web-title {
-    margin-left: 8px;
+    margin-left: 70px;
+    margin-right: 20px;
 }
 
 header .navigator .web-name a,

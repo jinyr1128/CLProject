@@ -23,12 +23,6 @@ const members = [
         bigText: "권준혁",
         smallText: "Just Do It"
     },
-    {
-        image: "./images/MainPage_4.jpg",
-        website: "https://www.jowon2.com",
-        bigText: "장지원",
-        smallText: "인간은 스스로의 선택에 의해 자신의 모습을 만들어간다"
-    }
 ];
 
 let currentImageIndex = 0;
