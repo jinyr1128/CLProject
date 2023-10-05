@@ -35,11 +35,9 @@ function MakeTemplate() {
 
 MakeTemplate.prototype.templateSection = function(data, template, target) {
     let userData = JSON.parse(data);
-    console.log(userData['personality']);
     let bindTemplate = Handlebars.compile(template.innerText);
     let resultHtml = bindTemplate(userData);
     target.innerHTML = resultHtml;
-    console.log(userData);
     let bci = document.querySelector(".title-section");
     bci.style.backgroundImage = `url(./images/${userData['bannerImg']})`;
     
@@ -81,19 +79,3 @@ async function DataLoader(id) {
   });
   return row;
 }
-
-
-
-
-
-  // let data = {
-  //   "name": "진유록",
-  //   "imageUrl": "./images/profile.jpg",
-  //   "advantage": "끈기",
-  //   "personality": "좋음",
-  //   "mbtiImageUrl": "./images/MBTI.png",
-  //   "hobbyImageUrl": ["./icons/movie.png", "./icons/hobby.png", "./icons/psgame.png", "./icons/listening.png"],
-  //   "titleImageUrl": "./images/sea.jpg",
-  //   "favoriteImageUrl": ["./images/bike.jpg", "./images/sea.jpg", "./images/pet.png", "./images/lego.jpg", "./images/metamong.jpeg"]
-  // };
- 
