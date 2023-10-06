@@ -1,13 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Stylish&display=swap');
+
+@font-face {
+    font-family: Nato;
+    src: url(../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+    font-family: stylish;
+    src: url(../font/Stylish/Stylish-Regular.ttf) format('truetype');
+}
 
 * {
-    font-family: 'Gothic A1', sans-serif;
-    font-family: 'Stylish', sans-serif;
     padding: 10px;
 }
 
 body {
     background-color: #F5EEF8;
+    font-family: 'Stylish', sans-serif;
 }
 
 a {
@@ -25,6 +32,7 @@ button {
     align-items: center;
     height: 60px;
     width: 100%;
+    font-family: 'Nato', sans-serif; 
 }
 
 .navigator .web-title {
@@ -69,6 +77,10 @@ button {
     background-color: #ddd;
 }
 
+.nav-team{
+    font-family: 'Stylish', sans-serif;
+}
+
 /* === TEAM SECTION STYLES === */
 .info-section {
     text-align: center;
@@ -107,10 +119,9 @@ button {
     text-align: left; 
     font-size: 30px;
     width: calc(100% - 170px);
-    height: 130px;
+    height: 170px;
     background-color: rgba(230, 176, 170, 0.2);
-    padding: 3ch 90px;
-    font-size: 30px;
+    padding: 3ch 80px;
     border-radius: 15px;
 }
 /* === TEAM MEMBER CARDS STYLES === */
@@ -284,8 +295,9 @@ button {
     opacity: 1;
 }
 .small-icon {
-    width: 50px;  
-    height: 50px; 
+    width: 35px;  
+    height: 35px; 
     margin-left: 3px;
     margin-top: 10px;
+    vertical-align: bottom;
 }

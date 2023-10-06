@@ -146,7 +146,7 @@ section.profile-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1.5rem;
 
     border-radius: 5px;
     margin: 2rem 0;
@@ -163,16 +163,15 @@ section.profile-section {
 
 
 figure {
-    margin: 2rem;
+    margin: 1.5rem;
     border-radius: 5%;
     background-color: transparent;
-    padding: 1rem;
 }
 
 figure img {
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border: thick dotted orange;
 }
 
@@ -182,12 +181,12 @@ figure img {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
 }
 
 .content-subtitle {
     font-weight: 700;
     font-size: 1.1rem;
+    white-space: nowrap;
 }
 
 .info-content div,
@@ -225,6 +224,7 @@ figure img {
     justify-content: center;
     align-items: center;
     position: relative;
+ 
 }
 
 #mbti-text {
@@ -240,13 +240,13 @@ figure img {
 }
 
 #mbti-image {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 4px;
     border: 1px solid #333;
     position: relative;
     z-index: 1;
-    max-width: 100%;
+    max-width: 280px;
 }
 
 
