@@ -12,13 +12,13 @@ const members = [
         smallText: "No pain, No gain"
     },
     {
-        image: "./images/MainPage_2.jpeg",
+        image: "./images/MainPage_2.jpg",
         website: "profile.html?id=2",
         bigText: "진유록",
         smallText: "Together: It makes everything possible"
     },
     {
-        image: "./images/MainPage_3.jpeg",
+        image: "./images/MainPage_3.jpg",
         website: "profile.html?id=3",
         bigText: "권준혁",
         smallText: "Just Do It"
