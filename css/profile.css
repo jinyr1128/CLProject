@@ -19,6 +19,9 @@ a {
 ul, li {
     margin : 0;
 }
+h1 {
+    margin : 0;
+}
 
 /* reset css */
 
@@ -30,7 +33,6 @@ header .navigator {
 }
 
 header .navigator li.nav-list {
-
     display: inline;
     font-size: 20px;
     font-weight: 700;
@@ -55,13 +57,14 @@ header .navigator ul.nav-group li.nav-list a.nav-btn:hover {
 
 
 header .navigator .web-name {
-    /* margin: 0; */
-    font-size: 35px;
+    font-size: 29px;
     color: #FFCA58;
 }
 header .navigator h1.web-title {
     margin-left: 70px;
     margin-right: 20px;
+    display: flex;
+    align-items: stretch;
 }
 
 header .navigator .web-name a,
@@ -71,7 +74,6 @@ header .navigator .web-name a,
 
 
 header .navigator .web-icon {
-    display : inline-block;
     background-image: url('../icons/favicon.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
